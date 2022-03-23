@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Mapping</title>
+        <meta name="author" content= "ROSALYN BALALA">
+        <meta http-equiv="refresh" content="1800">
+        <script language="JavaScript">
+            function writeText(txt){
+                document.getElementById("desc").innerHTML=txt;
+            }
+            function dissolveText(txt){
+                document.getElementById("desc").innerHTML=txt;
+            }
+        </script>
+        <style type="text/css">
+            body{
+                background-color: darkgray;
+            }
+            h1{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 50px;
+                color: honeydew;
+                text-align: center;
+            }
+            p#desc{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                color: honeydew;
+                text-align: center;
+
+        
+            }
+        </style>
+    </head>
+    <body>
+        <br><br>
+        <h1 >THE SOLAR SYSTEM</h1>
+        <br>
+        <div align="center">
+            <img src="../IMAGE/ITBD.jpg" usemap="#ITBD">
+            <map name="ITBD">
+                <area shape="circle" coords="283,405,83" href="../HTML/Balala_Mercury_ITBD.html" target="newSpace" onmouseover="writeText('Temperatures on Mercury are extreme. During the day, temperatures on the surface can reach 800 degrees Fahrenheit.');" onmouseout="dissolveText('')"/>
+
+                <area shape="rectangle" coords="91,125,274,287" href="../HTML/Balala_Jupiter_ITBD.html" onmouseover="writeText('Temperature of minus 234 degrees Fahrenheit (minus 145 degrees Celsius), Jupiter is frigid even in its warmest weather.');" onmouseout="dissolveText('')"/>
+
+                <area shape="poly" coords="118,115,98,82,93,68,88,46,86,43,108,28,
+                109,28,109,24,130,25,152,23,153,23,167,37,172,41,
+                104,45,222,63,241,55,259,75,261,81,280,80,300,103,
+                324,105,349,131,353,139,382,158,,407,187,404,200
+                427,207,433,236,426,259,438,276,418,285,393,267,
+                378,283,333,269,283,139285,116,199,95,176,105,148,102
+                119,119" href="../HTML/Balala_Saturn_ITBD.html" onmouseover="writeText('Wind speeds on Saturn are extremely high, having been measured at slightly more than 1,000 mph, considerably higher than Jupiter..');" onmouseout="dissolveText('')"/>
+            </map>
+        </div>
+
+        <p id="desc"></p>
+    </div>
+    </body>
+</html>
